@@ -10,7 +10,7 @@ import math
 
 while True:
     try:
-        x = int(input('Enter a number x: ')); 
+        x = float(input('Enter a number x: ')); 
     except ValueError:
         continue
     else:
@@ -18,7 +18,7 @@ while True:
     
 while True:
     try:
-        y = int(input('Enter a number y: '))
+        y = float(input('Enter a number y: '))
     except ValueError:
         continue
     else:
@@ -29,3 +29,8 @@ print('x**y: ',
 
 print('log(x): ', 
       math.log2(x))
+
+#the longer blocks prompt the user to enter a number
+#used a while loop to account for the possibility
+#that the user might type something other than a 
+#number
