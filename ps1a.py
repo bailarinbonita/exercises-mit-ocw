@@ -7,11 +7,8 @@ Created on Mon Jul 22 15:24:39 2019
 """
 
 annual_salary = float(input('Enter your annual salary: '))
-
 portion_saved = float(input('Enter the percent of your salary to save, as a decimal: ')) * (annual_salary / 12)
-
 total_cost = float(input('Enter the cost of your dream home: '))
-
 portion_down_payment = total_cost * 0.25
 
 #These four lines require the user's input.
@@ -26,11 +23,10 @@ r = 0.04
 #their down payment. Since the return on investments and the portion of salary
 #saved are monthly calculations, the while loop operates in the same way.
 
-count = 0
-
+months = 0
 while portion_down_payment > current_savings:
         current_savings += portion_saved + ((current_savings * r) / 12)
-        count += 1
-print('Number of months:', count)
+        months += 1
+print('Number of months:', months)
 
 #Used a while loop capped at the portion down payment.
