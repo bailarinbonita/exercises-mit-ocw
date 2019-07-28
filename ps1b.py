@@ -35,3 +35,6 @@ while portion_down_payment > current_savings:
 #salary over time.
 
 print('Number of months:', months)
+
+#when using test cases, two of the calculations are a bit off, but I haven't been able 
+#to locate the issue.
